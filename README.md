@@ -23,6 +23,7 @@ Initiates the password recovery process. Prompts for a username and checks if it
 ## Regular Expressions
 
 Username: r'^[a-zA-Z]+[\._]?[a-zA-z 0-9]+[@]\w+[.]\w{2,3}$'
+
 Password: r"^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#])"
 
 ## Note
