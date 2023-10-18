@@ -5,7 +5,9 @@ A simple Python program that allows users to register, login, and recover forgot
 
 ## Features
 User Registration: Allows users to create a username and password. Validates username and password based on specified criteria.
+
 User Login: Allows existing users to log in with their username and password.
+
 Password Recovery: Enables users to recover their password by providing their username.
 
 ## Functions
