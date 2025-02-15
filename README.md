@@ -1,40 +1,26 @@
-GUVI - Assignment 1                                                       
+# User Authentication System in Python
+A simple Python program for user registration, login, and password recovery, utilizing regular expressions for input validation.
 
-# User Login Python Program
-A simple Python program that allows users to register, login, and recover forgotten passwords using regular expressions for input validation.
+## 🚀 Features
+User Registration: Allows users to create a username and password, ensuring they meet predefined validation criteria.
 
-## Features
-User Registration: Allows users to create a username and password. Validates username and password based on specified criteria.
+User Login: Enables existing users to log in securely using stored credentials.
 
-User Login: Allows existing users to log in with their username and password.
+Password Recovery: Provides users with an option to recover their password by verifying their username.
+## 🔧 Functions
+register() → Creates a new user account. Validates the username using a regular expression to ensure an email-like format.
 
-Password Recovery: Enables users to recover their password by providing their username.
+passwd() → Prompts users to set a password, enforcing strong password rules (uppercase, lowercase, digit, and special character).
 
-## Functions
-register()
-Allows users to create a username. Validates the username using a regular expression for email-like formats.
+forgetpassword() → Initiates the password recovery process by verifying the provided username.
+## 🛠 Regular Expressions
+Username Validation:
 
-passwd()
-Prompts the user to create a password. Enforces criteria like at least one lowercase, one uppercase, one digit, and one special character.
+r'^[a-zA-Z]+[._]?[a-zA-Z0-9]+[@]\w+[.]\w{2,3}$'
 
-forgetpassword()
-Initiates the password recovery process. Prompts for a username and checks if it exists in the database.
+Password Validation:
 
-## Regular Expressions
+r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#])"
 
-Username: r'^[a-zA-Z]+[\._]?[a-zA-z 0-9]+[@]\w+[.]\w{2,3}$'
-
-Password: r"^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#])"
-
-## Note
-User data is stored in a file named database.txt.
-
-
-
-
-
-
-
-
-
-
+## 📂 Note
+User data is securely stored in a file named database.txt.
